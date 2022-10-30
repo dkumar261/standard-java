@@ -23,7 +23,7 @@ public class Test {
 				.collect(Collectors.toList());
 	}
 	private static List<Product> getProductWithBookAndPriceGreaterTenPercentDiscount(List<Product> products) {
-		return products.stream().filter(product -> product.getCategory().equals("Book")).map(product -> product.getPrice()*0.9))
+		return products.stream().filter(product -> product.getCategory().equals("Book"))
 				.collect(Collectors.toList());
 	}
 
