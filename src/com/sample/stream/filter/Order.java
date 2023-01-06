@@ -5,7 +5,6 @@ import java.util.List;
 public class Order {
 
 	private List<Product> products;
-
 	
 	@Override
 	public String toString() {
