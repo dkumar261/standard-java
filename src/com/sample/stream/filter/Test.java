@@ -14,7 +14,8 @@ public class Test {
 
 		List<Order> orders = getOrders();
 		getOrdersabc(orders);
-
+		
+		
 	}
 
 	// Find product with category Book which is price more than 100
@@ -23,9 +24,10 @@ public class Test {
 				.collect(Collectors.toList());
 	}
 	private static List<Product> getProductWithBookAndPriceGreaterTenPercentDiscount(List<Product> products) {
-		return products.stream().filter(product -> product.getCategory().equals("Book")).map(product -> product.getPrice()*0.9))
+		return products.stream().filter(product -> product.getCategory().equals("Book"))
 				.collect(Collectors.toList());
 	}
+	
 
 	private static void getOrdersabc(List<Order> orders) {
 
@@ -62,6 +64,11 @@ public class Test {
 		orders.add(order);
 		orders.add(order2);
 		return orders;
+	}
+	
+	public void test() {
+		Runnable a =()->{System.out.println(this);};
+
 	}
 
 }
