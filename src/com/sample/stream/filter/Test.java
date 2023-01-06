@@ -14,7 +14,8 @@ public class Test {
 
 		List<Order> orders = getOrders();
 		getOrdersabc(orders);
-
+		
+		
 	}
 
 	// Find product with category Book which is price more than 100
@@ -59,6 +60,11 @@ public class Test {
 		orders.add(order);
 		orders.add(order2);
 		return orders;
+	}
+	
+	public void test() {
+		Runnable a =()->{System.out.println(this);};
+
 	}
 
 }
