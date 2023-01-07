@@ -1,5 +1,10 @@
 package com.sample.thread;
 
+/**
+ * 
+ * @author Dinesh Kumar
+ *
+ */
 public class Test {
 
 	public static void main(String[] args) {
