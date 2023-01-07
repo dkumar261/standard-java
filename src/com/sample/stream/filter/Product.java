@@ -8,7 +8,7 @@ public class Product {
 	public Product(String category, int price, String name) {
 		this.category = category;
 		this.price = price;
-		this.name = name;
+		this.name = name; 
 	}
 
 	@Override
