@@ -13,7 +13,9 @@ public class Test {
 		
 		ExecutorService executorService = Executors.newSingleThreadExecutor();
 		Future<String> submit = executorService.submit(mc);
+		System.out.println(submit.isDone());
 		String string = submit.get();
+		System.out.println(submit.isDone());
 		System.out.println(string);
 		
 	}

@@ -10,7 +10,8 @@ public class MyCallable implements Callable<String> {
 		return getValue();
 	}
 
-	public String getValue() {
+	public String getValue() throws InterruptedException {
+		Thread.sleep(10000);
 		System.out.println("-----return value-----");
 		return "Hello World !!";
 	}
