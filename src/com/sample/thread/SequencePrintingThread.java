@@ -23,7 +23,7 @@ public class SequencePrintingThread implements Runnable {
 						e.printStackTrace();
 					}
 				}
-				System.out.println(Thread.currentThread().getName() + " " + number);
+				System.out.println(this+"  =  "+Thread.currentThread().getName() + " " + number);
 				number++;
 				lock.notifyAll();
 			}
