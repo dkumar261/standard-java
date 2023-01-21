@@ -16,9 +16,9 @@ class StringCommaSeparator {
 
 		}
 		List<String> listOfString = (Arrays.asList(str.split(COMMA)));
-		
+
 		List<String> trimedList = listOfString.stream().map(String::trim).collect(Collectors.toList());
-		
+
 		StringJoiner stringJoiner = new StringJoiner(COMMA);
 		trimedList.forEach(str4 -> stringJoiner.add(str4));
 		String string = stringJoiner.toString();
@@ -31,8 +31,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		StringCommaSeparator commaSeparator = new StringCommaSeparator();
-		String outPut = commaSeparator.spaceRemover(
-				"abc  , def   ,    jkl   ,  apa");
+		String outPut = commaSeparator.spaceRemover("abc  , def   ,    jkl   ,  apa");
 		System.out.println(outPut);
 	}
 }
