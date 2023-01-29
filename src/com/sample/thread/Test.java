@@ -8,12 +8,16 @@ package com.sample.thread;
 public class Test {
 
 	public static void main(String[] args) {
-		System.out.println(Thread.currentThread().getName());
-		Runnable runnable = () -> {
-			System.out.println(Thread.currentThread().getName());
-		};
+		SequencePrintingThread runnable1 = new SequencePrintingThread(1);
+		SequencePrintingThread runnable2 = new SequencePrintingThread(2);
+		SequencePrintingThread runnable3 = new SequencePrintingThread(0);
 
-		Thread thread = new Thread(runnable);
-		thread.start();
+		Thread t1 = new Thread(runnable1, "T1");
+		Thread t2 = new Thread(runnable2, "T2");
+		Thread t3 = new Thread(runnable3, "T3");
+
+		t1.start();
+		t2.start();
+		t3.start();
 	}
 }
