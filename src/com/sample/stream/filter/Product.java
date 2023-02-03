@@ -11,6 +11,12 @@ public class Product {
 		this.name = name; 
 	}
 
+	
+	public Product withProduct(int newPrice) {
+		this.price=newPrice;
+		return this;
+	}
+	
 	@Override
 	public String toString() {
 		return "Product [category=" + category + ", price=" + price + ", name=" + name + "]";
@@ -22,5 +28,17 @@ public class Product {
 
 	public int getPrice() {
 		return price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 }
