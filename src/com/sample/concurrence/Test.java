@@ -9,7 +9,7 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		List<String> list = List.of("dog", "cat", "rat", "tiger");
+		List<String> list = Arrays.asList("dog", "cat", "rat", "tiger");
 
 		List<Integer> collect = list.stream().filter(Test::take).map(Test::map).collect(Collectors.toList());
 		
@@ -21,7 +21,7 @@ public class Test {
 		
 		
 		String str1 = "I 	 am            ,           Dinesh   Kumar   ,  dwarka  ,           delhi,                 india";
-					//"him   ani   ,                   sa rdana,           IHS  MARKIT , abc ,      ggg   gggg"
+					//"himï¿½ ï¿½aniï¿½ ï¿½,ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½saï¿½rdana,ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½IHSï¿½ MARKITï¿½, abc , ï¿½ ï¿½ ï¿½gggï¿½ ï¿½gggg"
 		
 		List<String> list2 = Arrays.asList(str1.split(","));
 		System.out.println(list2);
