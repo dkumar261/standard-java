@@ -1,1 +1,5 @@
-
+Write a lambda expression that takes a list of numbers and returns a new list of their squares.
+Use lambda expressions to calculate the sum of even numbers in a list.
+Create a custom comparator as a lambda expression for sorting a list of strings by their second character, then use it to sort a list.
+Given a list of Person objects, use lambda expressions and the Streams API to find the average age of all persons.
+Given a list of integers, filter out all the odd numbers, square the remaining numbers, and then find the sum of the squared values.
